@@ -1,7 +1,7 @@
 """
 multiplication-table.py
 Author: Joe Richter
-Credit: <list sources used, if any>
+Credit: https://stackoverflow.com/questions/20415384/properly-formatted-multiplication-table
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
