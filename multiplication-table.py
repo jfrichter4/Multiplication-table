@@ -26,4 +26,5 @@ b=int(input("Height of multiplication table: "))
 for row in range(1, b+1):
     for col in range(a+1, 1):
         print(*("{:3}".format(row*col)))
-    
+for row in range(1, n + 1):
+    print(*(f"{row*col:3}" for col in range(1, n + 1)))
