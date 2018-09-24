@@ -1,7 +1,7 @@
 """
 multiplication-table.py
 Author: Joe Richter
-Credit: https://stackoverflow.com/questions/20415384/properly-formatted-multiplication-table
+Credit: Stack Overflow
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -23,6 +23,13 @@ Height of multiplication table: 8
 """
 a=int(input("Width of multiplication table: "))
 b=int(input("Height of multiplication table: "))
-for row in range(1, b+1):
-    for col in range(1, a+1):
-        print(*(f"{:3}".format(row*col)))
+x = 1
+for y in range(b):
+    row = ""
+    col = 0
+    for y in range(a):
+        col += x
+        col0 = ("{0:>4}".format(col))
+        row = ("{0}{1}".format(row, col0))
+    print(row)
+    x += 1
